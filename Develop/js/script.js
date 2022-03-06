@@ -69,7 +69,7 @@ let questions =
     }
     ];
 
-    
+
 // global variables 
 let questionCount = 0; //question Index 
 let questionLast = questions.length;
@@ -77,3 +77,20 @@ let score = 0;
 let correct;
 let timer;
 let timerCount;
+
+
+// it hides the welcome div which contains instructions and shows the questions also starts the timer 
+function startGame() {
+    timerCount = 50;
+    welcomeBox.style.display = "none";
+    endGameEl.style.display = "none";
+
+    renderQuestion()
+    quizSection.style.display = "block";
+
+    startTimer();
+
+}
+
+// starts the game when the start button is pushed  
+startBtn.addEventListener("click", startGame);
