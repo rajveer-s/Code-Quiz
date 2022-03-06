@@ -1,6 +1,7 @@
 # Code-Quiz
 ````
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment perhaps as part of an interview process.
+At some point in your journey to become a full-stack web developer 
+you’ll likely be asked to complete a coding assessment perhaps as part of an interview process.
 A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
 ````
 
@@ -15,8 +16,32 @@ A Coding Quiz that lets you test your coding knowledge. When you visit the page 
 ## Links 
 - [Github Link](https://github.com/rajveer-s/Code-Quiz)
 
-- [Deployed Link]()
+- [Deployed Link](https://rajveer-s.github.io/Code-Quiz/)
 
 ## Screenshot
 ![Screenshot1](./Develop/Screenshots/CodeQuiz.png)
 ![Screenshot2](./Develop/Screenshots/Codequiz1.png)
+
+## User Story
+
+```
+AS A coding boot camp student
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+SO THAT I can gauge my progress compared to my peers
+```
+
+## Acceptance Criteria
+
+```
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and my score
+```
