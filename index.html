@@ -13,7 +13,35 @@
 </head>
 
 <body>
-        <!-- navbar created -->
+    <!-- navbar created -->
     <nav id="navbar" role="navigation">
         <button class="score-btn"> <a href="./highscore.html">View Highscores</a></button>
     </nav>
+    <!-- container section   -->
+    <div class="container">
+        <!-- welcome screen with instructions -->
+        <div id="welcome-box">
+            <h1>Coding Quiz Challenge</h1>
+            <h3>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by ten seconds.</h3>
+            <hr>
+            <!-- start button to start the game  -->
+            <button class="start-btn">Start quiz</button>
+        </div>
+        <!-- quiz section  -->
+        <section id="quizsec" class="hide">
+            <!-- Countdown timer  -->
+            <div class="timer-style" id="timer"> Time: <span id="counter">0</span></div>
+            <!-- div where the questions will be  -->
+            <div id="questions"></div>
+            <!-- choices section  -->
+            <div id="choices">
+                <button class="option1" onclick="checkAns('a')"></button>
+                <button class="option2" onclick="checkAns('b')"></button>
+                <button class="option3" onclick="checkAns('c')"></button>
+                <button class="option4" onclick="checkAns('d')"></button>
+            </div>
+            <hr>
+            <!-- right or wrong message  -->
+            <div id="dismessage" class="hide"></div>
+        </section>

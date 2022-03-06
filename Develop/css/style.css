@@ -20,7 +20,7 @@ ul{
     display: flex;
     justify-content: space-between;
   }
-  
+
 /* navbar button  */
   .score-btn{
     background-color: red;
@@ -36,3 +36,82 @@ ul{
       color: #fff;
       text-decoration: none;
   }
+
+    /* Container div  */
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        height: 80vh;
+        background-color:white;
+        box-shadow: 0 0 10px 2px;
+    }
+
+    /* countdown timer  */
+  
+    .timer-style{
+        display: flex;
+        position: fixed;
+        top: 110px;
+        right: 340px;
+        width: 100px;
+        padding: 10px 10px 10px 10px;
+        /* background-color: gray; */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    /* instructional welcome box  */
+    #welcome-box{
+        display: inline-block;
+        text-align: center;
+        margin: 20px;
+    }
+  
+    #welcome-box button{
+      padding: 20px;
+      background-color: red;
+      color: black;
+      border-radius: 100px;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+
+    /* start button decoration  */
+    .start-btn{
+        margin-top: 30px;
+    }
+    /* hide class to make all the divs hide that arent being used  */
+    .hide{
+        display: none;
+    }
+  
+    .show{
+        display:block;
+    }
+
+    /* questions div  */
+    #question { 
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    #questions{
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        font-size: 40px;
+    }
+  
+    /* choices div  */
+    #choices button{
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+  
+    }
+    #choices button:hover{
+      background-color: red;
+      color: white;
+      }
+  
