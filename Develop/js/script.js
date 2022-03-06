@@ -149,8 +149,18 @@ function checkAns(answer) {
     setTimeout(function () {
         message
     }, 500)
-    
+
 }
+
+// it hides all the other divs such as questions || welcome box and shows the score page  
+function displayScore() {
+
+    welcomeBox.style.display = "none";
+    endGameEl.style.display = "block";
+    quizSection.style.display = "none";
+    scoreBox.textContent = "YOU GOT " + score + " OUT OF " + questionLast + " RIGHT";
+}
+
 
 
 
