@@ -161,6 +161,15 @@ function displayScore() {
     scoreBox.textContent = "YOU GOT " + score + " OUT OF " + questionLast + " RIGHT";
 }
 
+// when the submit button is clicked on the score page it adds the userinput in local storage 
+submitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    let UsersInfo = {
+        initials: initialsInput.value.trim()
+    };
+    localStorage.setItem("UsersInfo", JSON.stringify(UsersInfo));
+})
+
 
 
 
