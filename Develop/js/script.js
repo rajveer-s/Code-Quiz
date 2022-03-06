@@ -126,6 +126,33 @@ function startTimer() {
     }, 1000)
 }
 
+// checks for the right answer in our choices and spits out the message if its the right or the wrong answer. also 10 seconds get taken off of the timer the user answers wrong. 
+function checkAns(answer) {
+
+    correct = questions[questionCount].rightAnswer;
+
+    if (answer === correct && questionCount !== questionLast) {
+        message.textContent = "Correct Answer";
+        score++;
+        questionCount++;
+        renderQuestion();
+    } else if (answer !== correct && questionCount !== questionLast) {
+        message.textContent = "Wrong Answer -10 seconds";
+        timerCount -= 10;
+        questionCount++;
+        renderQuestion();
+    } else {
+        displayScore();
+    }
+    // still in works 
+    message.style.display = "flex";
+    setTimeout(function () {
+        message
+    }, 500)
+    
+}
+
+
 
 // starts the game when the start button is pushed  
 startBtn.addEventListener("click", startGame);
