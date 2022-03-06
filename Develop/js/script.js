@@ -68,3 +68,12 @@ let questions =
         rightAnswer: "c"
     }
     ];
+
+    
+// global variables 
+let questionCount = 0; //question Index 
+let questionLast = questions.length;
+let score = 0;
+let correct;
+let timer;
+let timerCount;
