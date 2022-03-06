@@ -92,5 +92,22 @@ function startGame() {
 
 }
 
+// it displays the questions that we added on top and the choices
+function renderQuestion() {
+    endGameEl.style.display = "none";
+    if (questionCount === questionLast) {
+        return displayScore();
+    }
+
+    let ques = questions[questionCount];
+
+    question.innerHTML = '<p>' + ques.question + '</p>';
+    option1.innerHTML = ques.a;
+    option2.innerHTML = ques.b;
+    option3.innerHTML = ques.c;
+    option4.innerHTML = ques.d;
+}
+
+
 // starts the game when the start button is pushed  
 startBtn.addEventListener("click", startGame);
