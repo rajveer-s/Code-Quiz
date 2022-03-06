@@ -18,5 +18,5 @@ A Coding Quiz that lets you test your coding knowledge. When you visit the page 
 - [Deployed Link]()
 
 ## Screenshot
-![Screenshot1]()
-![Screenshot2]()
+![Screenshot1](./Develop/Screenshots/CodeQuiz.png)
+![Screenshot2](./Develop/Screenshots/Codequiz1.png)
