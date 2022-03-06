@@ -108,6 +108,24 @@ function renderQuestion() {
     option4.innerHTML = ques.d;
 }
 
+// starts the timer and set interval function makes the time live countdown
+function startTimer() {
+
+    timer = setInterval(function () {
+        timerCount--;
+        timeCounter.textContent = timerCount;
+        if (timerCount >= 0) {
+            if (timerCount < 0) {
+                clearInterval(timer);
+            }
+        }
+        if (timerCount === 0 || questionCount === questionLast) {
+            clearInterval(timer);
+            displayScore();
+        }
+    }, 1000)
+}
+
 
 // starts the game when the start button is pushed  
 startBtn.addEventListener("click", startGame);
