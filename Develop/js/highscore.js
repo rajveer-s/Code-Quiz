@@ -9,8 +9,7 @@ function setHighScore() {
         for (let i = 0; i < allHighScore.length; i++) {
 
             let createLi = document.createElement('li');
-            createLi.textContent = allHighScore[i].userName;
-            createLi.textContent = allHighScore[i].score;
+            createLi.textContent = allHighScore[i].initials + " " + allHighScore[i].score;
             saveScore.appendChild(createLi);
 
         }
