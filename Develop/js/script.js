@@ -177,35 +177,12 @@ submitBtn.addEventListener('click', function highScore(event) {
 
     gotHighscores.push(usersInfo);
     let newScore = JSON.stringify(gotHighscores);
-    localStorage.setItem('highscore', newScore);
+    localStorage.setItem('gotHighscores', newScore);
 
-    window.location.replace('./highscore.html');
-    setHighScore();
+    window.location.replace('./highscores.html');
 });
 
-// this function gets the input and score from the local storage and creats an li on the highscore page of the score and initials. 
-function setHighScore() {
 
-    let allHighScore = localStorage.getItem("allHighScore");
-    allHighScore = JSON.parse("allHighScore");
-
-    if (allHighScore !== null) {
-        for (let i = 0; i < allHighScore.length; i++) {
-
-            let createLi = document.createElement('li');
-            createLi.textContent = allHighScore[i].initials + " " + allHighScore[i].score;
-            saveScore.appendChild(createLi);
-
-        }
-
-    }
-
-}
-
-// clearBtn.addEventListener('click', function () {
-//     localStorage.clear();
-//     location.reload();
-// });
 
 
 
