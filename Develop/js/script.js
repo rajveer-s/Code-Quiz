@@ -167,13 +167,11 @@ function displayScore() {
 submitBtn.addEventListener('click', function highScore(event) {
     event.preventDefault();
     let gotHighscores = JSON.parse(localStorage.getItem("gotHighscores")) || [];
-    // console.log(gotHighscores)
 
     let usersInfo = {
         initials: initialsInput.value.trim(),
         score: score
     };
-    // console.log(usersInfo)
 
     gotHighscores.push(usersInfo);
     let newScore = JSON.stringify(gotHighscores);
