@@ -12,6 +12,9 @@ let initialsInput = document.querySelector('#initials');
 let submitBtn = document.querySelector('#submit')
 let choice = document.querySelectorAll('#choices');
 let timeCounter = document.querySelector('#counter');
+let highScorePage = document.querySelector('.hs-hero');
+let highscoreName = document.querySelector('#score-name');
+let highScoreNum = document.querySelector('#score-hs');
 let option1 = document.querySelector('.option1');
 let option2 = document.querySelector('.option2');
 let option3 = document.querySelector('.option3');
@@ -36,7 +39,7 @@ let questions =
         rightAnswer: "c"
     },
     {
-        question: "Who invented JavaScript?",
+        question: "Who invented Java?",
         a: "Douglas Crockford",
         b: "Sheryl Sandberg",
         c: "Brendan Eich",
@@ -44,7 +47,7 @@ let questions =
         rightAnswer: "c"
     },
     {
-        question: "Who invented JavaScript?",
+        question: "Who invented React?",
         a: "Douglas Crockford",
         b: "Sheryl Sandberg",
         c: "Brendan Eich",
@@ -162,13 +165,18 @@ function displayScore() {
 }
 
 // when the submit button is clicked on the score page it adds the userinput in local storage 
-submitBtn.addEventListener('click', function (event) {
+submitBtn.addEventListener('click', function highScore(event) {
     event.preventDefault();
-    let UsersInfo = {
-        initials: initialsInput.value.trim()
+    let gotHighscores = JSON.parse(localStorage.getItem("gotHighscores"));
+    let usersInfo = {
+        initials: initialsInput.value.trim(),
+        score: score
     };
-    localStorage.setItem("UsersInfo", JSON.stringify(UsersInfo));
-})
+
+    gotHighscores.push(usersInfo);
+    localStorage.setItem("HighScores", JSON.stringify(gotHighscores));
+
+});
 
 
 

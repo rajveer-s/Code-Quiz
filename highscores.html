@@ -13,11 +13,18 @@
 
     <div class="wrapper">
         <h1>Highscores</h1>
-        <div class="highscores">
+        <div class="hs-hero">
+            <h2>INITIALS</h2>
+            <h2>SCORE</h2>
+            <div id="score-name"></div>
+            <div id="score-hs"></div>
+        </div>
+
+        <div class="hs-buttons">
             <button class="go-home">
                 <a href="./index.html">Go back</a>
             </button>
-            <button class="reset">Clear Highscores</button>
+            <button class="reset" onclick="clearScore()">Clear Highscores</button>
         </div>
     </div>
 
