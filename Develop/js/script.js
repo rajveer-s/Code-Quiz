@@ -202,10 +202,10 @@ function setHighScore() {
 
 }
 
-clearBtn.addEventListener('click', function () {
-    localStorage.clear();
-    location.reload();
-});
+// clearBtn.addEventListener('click', function () {
+//     localStorage.clear();
+//     location.reload();
+// });
 
 
 
