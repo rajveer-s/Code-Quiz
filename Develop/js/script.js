@@ -13,8 +13,7 @@ let submitBtn = document.querySelector('#submit')
 let choice = document.querySelectorAll('#choices');
 let timeCounter = document.querySelector('#counter');
 let highScorePage = document.querySelector('.hs-hero');
-let highscoreName = document.querySelector('#score-name');
-let highScoreNum = document.querySelector('#score-hs');
+let saveScore = document.querySelector('#saveScore');
 let option1 = document.querySelector('.option1');
 let option2 = document.querySelector('.option2');
 let option3 = document.querySelector('.option3');
@@ -167,15 +166,45 @@ function displayScore() {
 // when the submit button is clicked on the score page it adds the userinput in local storage 
 submitBtn.addEventListener('click', function highScore(event) {
     event.preventDefault();
-    let gotHighscores = JSON.parse(localStorage.getItem("gotHighscores"));
+    let gotHighscores = JSON.parse(localStorage.getItem("gotHighscores")) || [];
+    // console.log(gotHighscores)
+
     let usersInfo = {
         initials: initialsInput.value.trim(),
         score: score
     };
+    // console.log(usersInfo)
 
     gotHighscores.push(usersInfo);
-    localStorage.setItem("HighScores", JSON.stringify(gotHighscores));
+    let newScore = JSON.stringify(gotHighscores);
+    localStorage.setItem('highscore', newScore);
 
+    window.location.replace('./highscore.html');
+    setHighScore();
+});
+
+// this function gets the input and score from the local storage and creats an li on the highscore page of the score and initials. 
+function setHighScore() {
+
+    let allHighScore = localStorage.getItem("allHighScore");
+    allHighScore = JSON.parse("allHighScore");
+
+    if (allHighScore !== null) {
+        for (let i = 0; i < allHighScore.length; i++) {
+
+            let createLi = document.createElement('li');
+            createLi.textContent = allHighScore[i].initials + " " + allHighScore[i].score;
+            saveScore.appendChild(createLi);
+
+        }
+
+    }
+
+}
+
+clearBtn.addEventListener('click', function () {
+    localStorage.clear();
+    location.reload();
 });
 
 
