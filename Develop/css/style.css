@@ -90,16 +90,8 @@ ul{
     }
 
     /* questions div  */
-    #question { 
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  
     #questions{
-        position: absolute;
-        top: 200px;
-        left: 650px;
+        display: contents;
         font-size: 40px;
     }
   
