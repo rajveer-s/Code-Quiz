@@ -141,3 +141,8 @@ ul{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: bolder;
     }
+    .hs-buttons {
+        display: flex;
+        width: max-content;
+        height: auto;
+    }
