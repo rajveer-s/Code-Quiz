@@ -8,7 +8,7 @@ A typical coding assessment includes both multiple-choice questions and interact
 ## Description 
 A Coding Quiz that lets you test your coding knowledge. When you visit the page you are presented with the instructions and a start button. It's a timer quiz try to answer all the question under the given time or the game will end once the time runs out. Wish you luck!
 
-## technologies Used
+## Technologies Used
 - HTML 
 - CSS
 - JAVASCRIPT
