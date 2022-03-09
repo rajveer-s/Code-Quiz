@@ -133,6 +133,8 @@ ul{
         width: 100%;
     }
     #saveScore{
+        display: block;
+        margin-top: 20px;
         height: 20vh;
         width: 100%;
         font-size: 30px;
