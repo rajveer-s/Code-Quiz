@@ -120,6 +120,9 @@ ul{
         display: inline-block;
         margin: 200px 800px;
     }
+    .wrapper h1{
+        text-align: center;
+    }
     .hs-buttons button{
     padding: 10px;
     font-weight: bolder;
@@ -131,6 +134,9 @@ ul{
         display: flex;
         height: 4vh;
         width: 100%;
+    }
+    .hs-hero {
+        text-align: center;
     }
     #saveScore{
         display: block;
