@@ -19,7 +19,7 @@ function setHighScore() {
 }
 
 setHighScore();
-
+// clear button to clear the local storage 
 clearBtn.addEventListener('click', function () {
     localStorage.clear();
     location.reload();

@@ -83,7 +83,7 @@ ul{
     .hide{
         display: none;
     }
-  
+  /* shows the div that called upon in js file  */
     .show{
         display:block;
     }
@@ -114,6 +114,7 @@ ul{
     .wrapper h1{
         text-align: center;
     }
+    /* buttons decorated  */
     .hs-buttons button{
     padding: 10px;
     font-weight: bolder;
