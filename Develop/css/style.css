@@ -10,6 +10,11 @@
 body, html{
     background-color:gray;
 }
+body{
+    background: url(https://source.unsplash.com/2200x1100/?coding);
+    height: 100vh;
+}
+
 h1{
     text-shadow: 3px 3px gray;
 }
@@ -110,6 +115,11 @@ ul{
     .wrapper{
         display: inline-block;
         margin: 200px 800px;
+        height: 60vh;
+        width: 20%;
+        border-radius: 2rem;
+        background-color:white;
+        box-shadow: 0 0 10px 2px;
     }
     .wrapper h1{
         text-align: center;
