@@ -164,7 +164,7 @@ function displayScore() {
 }
 
 // when the submit button is clicked on the score page it adds the userinput in local storage 
-submitBtn.addEventListener('click', function highScore(event) {
+submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     let gotHighscores = JSON.parse(localStorage.getItem("gotHighscores")) || [];
 

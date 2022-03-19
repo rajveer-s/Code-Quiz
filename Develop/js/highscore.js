@@ -2,6 +2,7 @@
 function setHighScore() {
 
     let allHighScore = JSON.parse(localStorage.getItem("gotHighscores"));
+    console.log(allHighScore)
 
 
     if (allHighScore !== null) {

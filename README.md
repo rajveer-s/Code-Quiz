@@ -1,4 +1,18 @@
 # Code-Quiz
+
+## Table of Contents
+ - [Code-Quiz](#code-quiz)
+  - [Description](#description)
+  - [Technologies Used](#technologies-used)
+  - [Links](#links)
+  - [Screenshot](#screenshot)
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+- [Questions?](#questions)
+
+---
+
+
 ````
 At some point in your journey to become a full-stack web developer 
 you’ll likely be asked to complete a coding assessment perhaps as part of an interview process.
@@ -45,3 +59,9 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
+
+
+---
+
+# Questions?
+### Email: rajsidhu2924@gmail.com
