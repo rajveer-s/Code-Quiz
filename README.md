@@ -1,5 +1,9 @@
 # Code-Quiz
 
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    THIS APPLICATION  IS COVERED UNDER THE MIT LICENSE
+
+
 ## Table of Contents
  - [Code-Quiz](#code-quiz)
   - [Description](#description)
